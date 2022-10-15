@@ -39,7 +39,7 @@ for i in range(2,rows+1):
 	source_code = html.fromstring(byte_data)
 	tree = source_code.xpath(namepath)
 	for ddata in tree:
-		data[ddata.text_content()]=str(len(ddata.xpath('div/div/div/svg/g/svg/svg')))+"★"
+		data[ddata.text_content()]=str(len(ddata.xpath('div/div/div/svg/g/svg/svg')))+" stars"
 	finaldata.append(data.copy())
 #writedata(finaldata)
 print(finaldata)
