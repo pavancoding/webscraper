@@ -41,4 +41,5 @@ for i in range(2,rows+1):
 	for ddata in tree:
 		data[ddata.text_content()]=str(len(ddata.xpath('div/div/div/svg/g/svg/svg')))+"★"
 	finaldata.append(data.copy())
-writedata(finaldata)
+#writedata(finaldata)
+print(finaldata)
